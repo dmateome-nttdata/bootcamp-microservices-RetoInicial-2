@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    @Value("${product.product-name}")
-    private String myProduct;
+    @Value("${data.data-name}")
+    private String myData;
 
-    @GetMapping(path="/getProductName")
-    public String myProduct() {
-        return this.myProduct;
+    @GetMapping(path="/getDataName")
+    public String myData() {
+        return this.myData;
     }
 }
